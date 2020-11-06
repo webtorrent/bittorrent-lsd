@@ -37,7 +37,12 @@ class LSD extends EventEmitter {
 
     const onListening = () => {
       debug('listening')
-      this.server.addMembership(LSD_HOST)
+
+      try {
+        this.server.addMembership(LSD_HOST)
+      } catch (err) {
+        this.emit('error', err)
+      }
     }
 
     const onMessage = (msg, rinfo) => {

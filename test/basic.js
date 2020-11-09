@@ -6,6 +6,25 @@ const common = require('./common')
 
 const LSD = require('../index')
 
+test('should emit error when addMembership fails', t => {
+  const opts = {
+    peerId: common.randomId(),
+    infoHash: common.randomHash(),
+    port: common.randomPort()
+  }
+  const lsd = new LSD(opts)
+
+  sinon.stub(lsd.server, 'addMembership').throws()
+
+  lsd.on('error', (err) => {
+    t.ok(err)
+
+    lsd.destroy(() => t.end())
+  })
+
+  lsd.start()
+})
+
 test('should emit peer when receiving a valid announce', t => {
   const opts = {
     peerId: common.randomId(),

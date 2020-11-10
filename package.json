@@ -1,7 +1,7 @@
 {
   "name": "bittorrent-lsd",
   "description": "Local Service Discovery (BEP14) implementation",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "author": {
     "name": "Julen Garcia Leunda",
     "email": "hicom150@gmail.com"

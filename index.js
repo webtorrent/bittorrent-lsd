@@ -1,3 +1,4 @@
+/*! bittorrent-lsd. MIT License. WebTorrent LLC <https://webtorrent.io/opensource> */
 const dgram = require('dgram')
 const EventEmitter = require('events').EventEmitter
 const debug = require('debug')('bittorrent-lsd')

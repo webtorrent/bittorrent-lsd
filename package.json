@@ -3,9 +3,16 @@
   "description": "Local Service Discovery (BEP14) implementation",
   "version": "1.0.0",
   "author": {
-    "name": "Julen Garcia Leunda",
-    "email": "hicom150@gmail.com"
+    "name": "WebTorrent LLC",
+    "email": "feross@webtorrent.io",
+    "url": "https://webtorrent.io"
   },
+  "contributors": [
+    {
+      "name": "Julen Garcia Leunda",
+      "email": "hicom150@gmail.com"
+    }
+  ],
   "bugs": {
     "url": "https://github.com/webtorrent/bittorrent-lsd/issues"
   },
@@ -32,5 +39,19 @@
     "peer-to-peer",
     "webtorrent"
   ],
-  "license": "MIT"
+  "license": "MIT",
+  "funding": [
+    {
+      "type": "github",
+      "url": "https://github.com/sponsors/feross"
+    },
+    {
+      "type": "patreon",
+      "url": "https://www.patreon.com/feross"
+    },
+    {
+      "type": "consulting",
+      "url": "https://feross.org/support"
+    }
+  ]
 }

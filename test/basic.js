@@ -6,7 +6,7 @@ const common = require('./common')
 
 const LSD = require('../index')
 
-test('should emit error when addMembership fails', t => {
+test('should emit a warning when addMembership fails', t => {
   const opts = {
     peerId: common.randomId(),
     infoHash: common.randomHash(),
@@ -16,7 +16,7 @@ test('should emit error when addMembership fails', t => {
 
   sinon.stub(lsd.server, 'addMembership').throws()
 
-  lsd.on('error', (err) => {
+  lsd.on('warning', (err) => {
     t.ok(err)
 
     lsd.destroy(() => t.end())

@@ -41,7 +41,7 @@ class LSD extends EventEmitter {
       try {
         this.server.addMembership(LSD_HOST)
       } catch (err) {
-        this.emit('error', err)
+        this.emit('warning', err)
       }
     }
 

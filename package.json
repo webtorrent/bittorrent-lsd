@@ -16,7 +16,11 @@
   "bugs": {
     "url": "https://github.com/webtorrent/bittorrent-lsd/issues"
   },
+  "chromeapp": {
+    "dgram": "chrome-dgram"
+  },
   "dependencies": {
+    "chrome-dgram": "^3.0.6",
     "debug": "^4.2.0"
   },
   "devDependencies": {

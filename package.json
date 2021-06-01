@@ -24,9 +24,9 @@
     "debug": "^4.2.0"
   },
   "devDependencies": {
-    "sinon": "^9.2.1",
+    "sinon": "9.2.4",
     "standard": "*",
-    "tape": "^5.0.1"
+    "tape": "5.2.2"
   },
   "main": "index.js",
   "scripts": {

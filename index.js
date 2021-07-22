@@ -51,7 +51,7 @@ class LSD extends EventEmitter {
 
       const parsedAnnounce = this._parseAnnounce(msg.toString())
 
-      if (parsedAnnounce == null) return
+      if (parsedAnnounce === null) return
       if (parsedAnnounce.cookie === this.cookie) return
 
       parsedAnnounce.infoHash.forEach(infoHash => {
@@ -70,7 +70,7 @@ class LSD extends EventEmitter {
 
   _parseAnnounce (announce) {
     const checkHost = (host) => {
-      return /^(239.192.152.143|\[ff15::efc0:988f\]):6771$/.test(host)
+      return /^(239.192.152.143|\[ff15::efc0:988f]):6771$/.test(host)
     }
 
     const checkPort = (port) => {

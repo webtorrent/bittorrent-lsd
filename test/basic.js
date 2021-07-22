@@ -53,12 +53,12 @@ test('should emit peer when receiving a valid announce', t => {
   })
 
   lsd.on('peer', (peerAddress, infoHash) => {
-    const ip = Object.values(os.networkInterfaces())
+    const addresses = Object.values(os.networkInterfaces())
       .flatMap(i => i)
       .filter(i => !i.internal && i.family === 'IPv4')
-      .reduce((acc, cur) => cur.address, '')
+      .map(i => `${i.address}:${port}`)
 
-    t.equal(peerAddress, `${ip}:${port}`)
+    t.ok(addresses.includes(peerAddress))
     t.equal(infoHash, infoHash)
 
     lsd.destroy(() => t.end())

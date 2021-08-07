@@ -28,7 +28,7 @@
     "semantic-release": "17.4.4",
     "sinon": "11.1.2",
     "standard": "*",
-    "tape": "5.3.0"
+    "tape": "5.3.1"
   },
   "main": "index.js",
   "scripts": {

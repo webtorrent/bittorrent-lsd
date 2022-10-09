@@ -115,8 +115,8 @@ test('should parse an announce without cookie', t => {
 
   const parsedAnnounce = lsd._parseAnnounce(announce)
   const expectedAnnounce = {
-    host: host,
-    port: port,
+    host,
+    port,
     infoHash: [ihash],
     cookie: null
   }
@@ -145,10 +145,10 @@ test('should parse an announce with a single infohash', t => {
 
   const parsedAnnounce = lsd._parseAnnounce(announce)
   const expectedAnnounce = {
-    host: host,
-    port: port,
+    host,
+    port,
     infoHash: [ihash],
-    cookie: cookie
+    cookie
   }
 
   t.deepEqual(parsedAnnounce, expectedAnnounce)
@@ -176,10 +176,10 @@ test('should parse an announce with multiple infohashes', t => {
 
   const parsedAnnounce = lsd._parseAnnounce(announce)
   const expectedAnnounce = {
-    host: host,
-    port: port,
+    host,
+    port,
     infoHash: [ihashA, ihashB],
-    cookie: cookie
+    cookie
   }
 
   t.deepEqual(parsedAnnounce, expectedAnnounce)
@@ -206,10 +206,10 @@ test('should parse an announce with ipv6 host', t => {
 
   const parsedAnnounce = lsd._parseAnnounce(announce)
   const expectedAnnounce = {
-    host: host,
-    port: port,
+    host,
+    port,
     infoHash: [ihash],
-    cookie: cookie
+    cookie
   }
 
   t.deepEqual(parsedAnnounce, expectedAnnounce)

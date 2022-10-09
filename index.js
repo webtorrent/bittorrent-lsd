@@ -119,10 +119,10 @@ class LSD extends EventEmitter {
       .reduce((acc, cur) => cur, null)
 
     return {
-      host: host,
-      port: port,
-      infoHash: infoHash,
-      cookie: cookie
+      host,
+      port,
+      infoHash,
+      cookie
     }
   }
 

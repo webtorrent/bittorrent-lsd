@@ -101,6 +101,7 @@ test('should not announce once when 3min passed', t => {
 
       lsd.destroy(() => {
         client.close()
+        clock.restore()
         t.end()
       })
     }
@@ -143,6 +144,7 @@ test('should announce twice when 5min passed', t => {
 
       lsd.destroy(() => {
         client.close()
+        clock.restore()
         t.end()
       })
     }

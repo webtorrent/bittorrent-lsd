@@ -7,6 +7,9 @@
     "email": "feross@webtorrent.io",
     "url": "https://webtorrent.io"
   },
+  "chromeapp": {
+    "dgram": "chrome-dgram"
+  },
   "contributors": [
     {
       "name": "Julen Garcia Leunda",
@@ -15,9 +18,6 @@
   ],
   "bugs": {
     "url": "https://github.com/webtorrent/bittorrent-lsd/issues"
-  },
-  "chromeapp": {
-    "dgram": "chrome-dgram"
   },
   "dependencies": {
     "chrome-dgram": "^3.0.6",
@@ -30,22 +30,6 @@
     "standard": "*",
     "tape": "5.6.1"
   },
-  "main": "index.js",
-  "scripts": {
-    "test": "standard && tape test/*.js"
-  },
-  "keywords": [
-    "bittorrent",
-    "bep14",
-    "lsd",
-    "local service discovery",
-    "protocol",
-    "peer",
-    "p2p",
-    "peer-to-peer",
-    "webtorrent"
-  ],
-  "license": "MIT",
   "funding": [
     {
       "type": "github",
@@ -60,12 +44,31 @@
       "url": "https://feross.org/support"
     }
   ],
+  "keywords": [
+    "bittorrent",
+    "bep14",
+    "lsd",
+    "local service discovery",
+    "protocol",
+    "peer",
+    "p2p",
+    "peer-to-peer",
+    "webtorrent"
+  ],
+  "license": "MIT",
+  "main": "index.js",
+  "release": {
+    "extends": "@webtorrent/semantic-release-config"
+  },
   "renovate": {
     "extends": [
       "github>webtorrent/renovate-config"
     ]
   },
-  "release": {
-    "extends": "@webtorrent/semantic-release-config"
+  "scripts": {
+    "lint": "standard",
+    "lint:fix": "standard --fix",
+    "test": "npm run lint && npm run test:tape",
+    "test:tape": "tape test/*.js"
   }
 }

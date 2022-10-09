@@ -24,7 +24,7 @@
     "debug": "^4.2.0"
   },
   "devDependencies": {
-    "@webtorrent/semantic-release-config": "1.0.7",
+    "@webtorrent/semantic-release-config": "1.0.8",
     "semantic-release": "19.0.5",
     "sinon": "14.0.1",
     "standard": "*",

@@ -1,7 +1,7 @@
-const test = require('tape')
-const common = require('./common')
+import test from 'tape'
+import * as common from './common.js'
 
-const LSD = require('../index')
+import LSD from '../index.js'
 
 test('should emit a warning when invalid announce header', t => {
   const opts = {

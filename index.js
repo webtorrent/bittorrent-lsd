@@ -1,9 +1,9 @@
 /*! bittorrent-lsd. MIT License. WebTorrent LLC <https://webtorrent.io/opensource> */
 import dgram from 'dgram'
 import { EventEmitter } from 'events'
-import debugFactory from 'debug'
+import Debug from 'debug'
 
-const debug = debugFactory('bittorrent-lsd')
+const debug = Debug('bittorrent-lsd')
 
 const ANNOUNCE_INTERVAL = 300000 // 5min
 const LSD_HOST = '239.192.152.143'

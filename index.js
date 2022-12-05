@@ -1,7 +1,9 @@
 /*! bittorrent-lsd. MIT License. WebTorrent LLC <https://webtorrent.io/opensource> */
-const dgram = require('dgram')
-const EventEmitter = require('events').EventEmitter
-const debug = require('debug')('bittorrent-lsd')
+import dgram from 'dgram'
+import { EventEmitter } from 'events'
+import Debug from 'debug'
+
+const debug = Debug('bittorrent-lsd')
 
 const ANNOUNCE_INTERVAL = 300000 // 5min
 const LSD_HOST = '239.192.152.143'
@@ -154,4 +156,4 @@ class LSD extends EventEmitter {
   }
 }
 
-module.exports = LSD
+export default LSD

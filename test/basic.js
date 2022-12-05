@@ -1,10 +1,10 @@
-const test = require('tape')
-const sinon = require('sinon')
-const dgram = require('dgram')
-const os = require('os')
-const common = require('./common')
+import test from 'tape'
+import sinon from 'sinon'
+import dgram from 'dgram'
+import os from 'os'
+import * as common from './common.js'
 
-const LSD = require('../index')
+import LSD from '../index.js'
 
 test('should emit a warning when addMembership fails', t => {
   const opts = {

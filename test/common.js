@@ -1,13 +1,13 @@
-const crypto = require('crypto')
+import crypto from 'crypto'
 
-exports.randomPort = () => {
+export const randomPort = () => {
   return crypto.randomBytes(2).readUInt16LE(0)
 }
 
-exports.randomId = () => {
+export const randomId = () => {
   return crypto.randomBytes(20)
 }
 
-exports.randomHash = () => {
+export const randomHash = () => {
   return crypto.randomBytes(20)
 }

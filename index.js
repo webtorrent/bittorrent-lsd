@@ -33,6 +33,8 @@ class LSD extends EventEmitter {
 
     this.cookie = `bittorrent-lsd-${this.peerId}`
 
+    this._host = opts.host
+
     this.destroyed = false
     this.annouceIntervalId = null
 
@@ -139,7 +141,7 @@ class LSD extends EventEmitter {
 
   start () {
     debug('start')
-    this.server.bind(LSD_PORT)
+    this.server.bind(LSD_PORT, this._host)
     this._announce()
 
     this.annouceIntervalId = setInterval(() => {

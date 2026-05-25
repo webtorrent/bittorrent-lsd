@@ -1,3 +1,10 @@
+## [2.0.1](https://github.com/webtorrent/bittorrent-lsd/compare/v2.0.0...v2.0.1) (2026-05-25)
+
+
+### Bug Fixes
+
+* **release:** update release.yml with additional permissions ([130af35](https://github.com/webtorrent/bittorrent-lsd/commit/130af35c86ae0be3528fceee086b7e652aa39b3d))
+
 # [2.0.0](https://github.com/webtorrent/bittorrent-lsd/compare/v1.1.1...v2.0.0) (2022-12-05)
 
 

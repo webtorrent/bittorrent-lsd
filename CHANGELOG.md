@@ -1,3 +1,10 @@
+## [2.0.3](https://github.com/webtorrent/bittorrent-lsd/compare/v2.0.2...v2.0.3) (2026-05-25)
+
+
+### Bug Fixes
+
+* **release:** add .github/ to .npmignore ([23029c3](https://github.com/webtorrent/bittorrent-lsd/commit/23029c354b399613d24c019b58f0c2357b3e9782))
+
 ## [2.0.2](https://github.com/webtorrent/bittorrent-lsd/compare/v2.0.1...v2.0.2) (2026-05-25)
 
 

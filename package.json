@@ -63,6 +63,10 @@
     "import": "./index.js"
   },
   "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/webtorrent/bittorrent-lsd.git"
+  },
   "release": {
     "extends": "@webtorrent/semantic-release-config"
   },

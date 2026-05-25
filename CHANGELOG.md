@@ -1,3 +1,10 @@
+## [2.0.2](https://github.com/webtorrent/bittorrent-lsd/compare/v2.0.1...v2.0.2) (2026-05-25)
+
+
+### Bug Fixes
+
+* add repository field to package.json ([ea06915](https://github.com/webtorrent/bittorrent-lsd/commit/ea06915fc80e7615c4110437d4440507957e9df7))
+
 ## [2.0.1](https://github.com/webtorrent/bittorrent-lsd/compare/v2.0.0...v2.0.1) (2026-05-25)
 
 

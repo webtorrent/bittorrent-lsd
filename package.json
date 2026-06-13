@@ -29,7 +29,7 @@
     "semantic-release": "25.0.5",
     "sinon": "15.2.0",
     "standard": "*",
-    "tape": "5.10.0"
+    "tape": "5.10.1"
   },
   "funding": [
     {
